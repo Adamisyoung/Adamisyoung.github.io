@@ -6,7 +6,7 @@ categories:
 - Notebook/Selenium
 tags: 
 ---
-
+> 和浏览器发生别样的互动～
 
 参考：[https://www.selenium.dev/documentation/](https://www.selenium.dev/documentation/)
 
