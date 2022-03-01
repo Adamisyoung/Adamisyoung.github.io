@@ -1,5 +1,5 @@
 ---
-title: Scrapy tutorial 2.5.1(working)
+title: Scrapy随记(一)
 copyright: true
 mathjax: true
 categories:
@@ -163,7 +163,7 @@ scrapy crawl quotes
 
 项目根目录会多出两个html文件，正如parse方法所指示(instruct)的那样，使用相应(respective)URL的内容(content)。
 
-![1.png](https://Adamisyoung.github.io/assets/pic/Scrapytutorial251/1.png)
+![1.png](https://Adamisyoung.github.io/assets/pic/Scrapynotes1/1.png)
 
 Scrapy调度(schedules)Spider的start_requests方法(methods)返回的scrapy.Request对象(objects)。在收到每个响应时，它会实例化(nstantiates)Response对象并调用与请求关联(associated)的回调方法(本例中为parse 方法)，将响应作为参数传递。
 
