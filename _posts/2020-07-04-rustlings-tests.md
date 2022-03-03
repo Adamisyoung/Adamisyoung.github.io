@@ -6,7 +6,7 @@ categories:
 - Rust/rustlings
 ---
 
-> rustlings系列题解
+> rustlings系列题解。
 
 # test1
 ```rust
