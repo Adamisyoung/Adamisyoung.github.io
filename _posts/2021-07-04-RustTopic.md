@@ -9,6 +9,8 @@ tags:
 
 > 待补充
 
+此为Rust专题，是Rust的独有用法的合集。
+
 # enum构造链表
 
 ```rust
