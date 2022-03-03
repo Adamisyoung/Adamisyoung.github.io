@@ -10,7 +10,6 @@ tags:
 
 
 
-# thread1
 ```rust
 // threads1.rs
 // Make this compile! Execute `rustlings hint threads1` for hints :)
