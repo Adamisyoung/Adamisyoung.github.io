@@ -5,7 +5,7 @@ categories:
 tags: 
 ---
 
-> rustlings系列题解
+> rustlings系列题解。
 
 # macros1
 ```rust
