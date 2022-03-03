@@ -4,10 +4,10 @@ title:  rustlings-thread
 date:   2021-07-04 19:36:31 +0800
 categories:
 - Rust/rustlings
-tag: 
+tags: 
 ---
 
-> rustlings系列题解
+> rustlings系列题解。
 
 # thread1
 ```rust
