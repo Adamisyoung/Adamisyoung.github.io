@@ -1,16 +1,18 @@
 ---
-layout: post
-title:  Rust专题(Display和Debug)
-date:   2021-07-04 13:16:31 +0800
+title: Rust专题：格式化打印(Display和Debug)
+copyright: true
+mathjax: true
 categories:
 - Rust/Topic
+tags: 
 ---
 
->具体来说说前面屡次出现的#[derive(Debug)]。
+>具体来说说#[derive(Debug)]。
 
 所有的类型，若想用std::fmt的格式化打印，都要求实现至少一个可打印的traits。自动的实现只为一些类型提供，比如std库中的类型。所有其他类型都必须手动实现。fmt::Debug这个trait使这项工作变得相当简单。所有类型都能推导(derive)fmt::Debug的实现。但是fmt::Display需要手动实现。
 
 所有std库类型都天生可以使用{:?}来打印，不过，使用derive的一个问题是不能控制输出的形式。而且也会牺牲一些美感。我们可以通过{:#?}来美化打印。
+
 ```rust
 //`derive`属性会自动创建所需的实现，使这个`struct`能使用 `fmt::Debug`打印。
 #[derive(Debug)]
@@ -32,6 +34,7 @@ fn main() {
 ```
 
 输出：
+
 ```rust
 Person {
     name: "Peter",
@@ -98,6 +101,7 @@ fn main()
 ```
 
 输出如下：
+
 ```rust
 Compare structures:
 Display: (0, 14)
@@ -111,6 +115,7 @@ Debug: Point2D { x: 3.3, y: 7.2 }
 std::fmt有很多类似Debug和Dispaly的trait，都有各自的实现方式。这里不一一赘述。
 
 若对一个结构体实现fmt::Display，其中的元素需要一个接一个地处理，这可能会很麻烦。处理时用到的宏write!每次都要生成一个fmt::Result。为正确的处理每个Result，需要加上?操作符。
+
 ```rust
 struct List(Vec<i32>);
 impl fmt::Display for List {
@@ -140,9 +145,11 @@ fn main() {
 ```
 
 输出如下：
+
 ```rust
 [0: 1, 1: 2, 2: 3]
 ```
+
 现在我们可以自定义输出了。是不是非常开心:)
 
 我们还可以对字符串进行格式化处理。format!即将格式化文本写到字符串String。格式化的方式是通过格式化字符串来指定的
@@ -209,6 +216,7 @@ fn main() {
 在上面的代码中，用到了一些新的方法，如Result返回，iter()迭代器，Formatter首指针等等。后续我们会一一涉及。
 
 输出如下
+
 ```rust
 Dublin: 53.348°N 6.260°W
 Oslo: 59.950°N 10.750°E

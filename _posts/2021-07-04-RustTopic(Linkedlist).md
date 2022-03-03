@@ -1,9 +1,10 @@
 ---
-layout: post
-title:  Rust专题-构造链表
-date:   2021-07-04 15:16:31 +0800
+title: Rust专题：enum构造链表
+copyright: true
+mathjax: true
 categories:
 - Rust/Topic
+tags: 
 ---
 
 > 待补充
