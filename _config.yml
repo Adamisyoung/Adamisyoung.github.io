@@ -5,9 +5,9 @@
 
 # Site
 title: 乌龙茶馆
-subtitle: 芝诺的乌龟、拉普拉斯兽、麦克斯韦妖和薛定谔的猫
+subtitle: 种一棵树最好的时间是十年前，其次是现在
 description: 在人类这个荒谬的物种之上，在生成和消逝的时与空的二律背反之间，在幻象和假象的自欺欺人之中，与其说是诞生，不如说是衍生了一种独特的艺术。
-author: Adam Zhang
+author: Adam·LEntropy
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: zh-Hans
 date_format: '%Y-%m-%d'
